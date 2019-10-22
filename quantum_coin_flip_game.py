@@ -15,7 +15,7 @@ def game_rules():
         "A qubit represents the quantum coin, initially at HEADS (superposition |0>)\n"
         "First the quantum computer can flip the coin by applying a gate\n"
         "Second you can decide to either flip the coin or not\n"
-        "Third the quantum coputer can flip the coin by applying a gate\n"
+        "Third the quantum computer can flip the coin by applying a gate\n"
         "Then we measure the qubit, and if we measure HEADS (|0>) then the computer wins\n"
         "If we measure TAILS (|1>) then we win!\n\n"
     )
