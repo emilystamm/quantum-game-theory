@@ -34,6 +34,7 @@ def QFT(n, prog):
    return prog
 
 
+
 # Rest of the functions for testing QFT 
 # -------------------------------------
 
@@ -95,6 +96,20 @@ def Run_Tests():
    prog.inst(X(0), I(1), I(2))
    # Representative Array of initial state
    array  = [0,1,0,0,0,0,0,0]
+   test_success = QFT_Test(n,prog, array)
+   print(test_success)
+   # Counter
+   if test_success: number_of_successes += 1
+   number_of_tests += 1
+
+
+   # Test 
+   n = 2
+   prog = Program()
+   # Initial State
+   prog.inst(I(0), X(1)) 
+   # Representative Array of initial state
+   array  = [0,0,1,0]
    test_success = QFT_Test(n,prog, array)
    print(test_success)
    # Counter
